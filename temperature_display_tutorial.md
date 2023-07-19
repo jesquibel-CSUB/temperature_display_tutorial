@@ -1,6 +1,13 @@
 # How to Create a Temperature Display
+## Step 1
+Begin by dragging the ``||basic.clearScreen||`` command in the ``||basic.onStart||`` block
+```blocks
+basic.clearScreen()
 
-## begin by dragging the ``||basic.show Number||`` icon into the ``||basic.forever||`` loop
+```
+
+## Step 2
+Next drag the ``||basic.show Number||`` icon into the ``||basic.forever||`` loop
 
 ```blocks
 basic.forever(function () {
@@ -8,7 +15,8 @@ basic.forever(function () {
 })
 ```
 
-## Next drag the ``||input.temperature||`` block into the ``||basic.showLeds||`` blocks
+## Step 3
+Last, drag the ``||input.temperature||`` block into the ``||basic.showLeds||`` blocks
 ```blocks
 basic.forever(function () {
     basic.showNumber(input.temperature())
